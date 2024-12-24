@@ -1,0 +1,102 @@
+﻿body {
+    font-family: Heebo, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.card img {
+    object-fit: cover;
+    height: 200px;
+    object-position: top;
+}
+.mb-3 {
+    font-family: "Rubik Doodle Shadow", cursive;
+    font-size: 60px;
+    color: #333;
+}
+
+#searchButton{
+    background-color: #88E3D8;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    margin: 2px;
+}
+
+#questionsBTN{
+    background-color: #FF6186;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    margin: 2px;
+    text-decoration: underline;
+}
+#showAllButton {
+    border: none;
+    border-radius: 12px;
+    margin: 2px;
+}
+#searchInput, .btn-secondary {
+    border-radius: 12px;
+}
+#detailsButton, #moredetailsButton  {
+    background-color: #88E3D8;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    margin: 2px;
+}
+
+
+.btn-close {
+    position: fixed;
+    left:150px;
+    z-index:2;
+    padding:1.25rem 1rem;
+    color: white;
+}
+
+#header{
+    position: relative;
+    background-image: url('../images/tarbut.png'); /* נתיב התמונה */
+    background-size: cover; /* להתאים את התמונה לגודל האזור */
+    background-position: center; /* למרכז את התמונה */
+    background-repeat: no-repeat; /* למנוע חזרה של התמונה */
+    padding: 20px; /* ריווח פנימי */
+    border-radius: 10px; /* פינות עגולות */
+}
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*background: rgba(0, 0, 0, 0.5); /* שכבת חצי-שקיפות */
+    border-radius: 10px; /* פינות עגולות */
+    z-index: 0;
+}
+
+header h1, header p, header button {
+    position: relative; /* לשמור את הטקסט מעל שכבת השקיפות */
+    z-index: 2;
+    font-size: 1.25rem;
+}
+
+
+.card {
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+
+@media (max-width: 576px) {
+    .card {
+        margin-bottom: 1rem;
+    }
+    
+}
